@@ -1,0 +1,33 @@
+/* assets/css/style.css */
+
+/* 1) Carga remota de la fuente */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+/* 2) Fuente global */
+body, .navbar, .card {
+  font-family: 'Poppins', sans-serif;
+}
+
+/* 3) Nav links blancos y efecto hover */
+.navbar .nav-link {
+  color: #ffffff !important;
+  transition: color 0.2s;
+}
+.navbar .nav-link:hover {
+  color: #ffea00 !important; /* amarillo suave */
+}
+
+/* 4) Brand más grande */
+.navbar .navbar-brand {
+  font-size: 1.25rem;
+}
+
+/* 5) Sombra y hover en cards */
+.card {
+  transition: transform .1s, box-shadow .1s;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
